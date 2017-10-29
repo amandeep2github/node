@@ -26,4 +26,4 @@ get /dogs/:id
 
 Cat.findById(req.params.id, function(err, cat){}
 
-bootstrap class form-group
+bootstrap class form-group, form-control
