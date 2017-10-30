@@ -29,3 +29,8 @@ Cat.findById(req.params.id, function(err, cat){}
 bootstrap class form-group, form-control
 
 semantic-ui
+
+name="blog[name]" 
+name ="blog[title]"
+this way u can call mongoose api as 
+Blog.create(req.body.blog, function(err, blog)
