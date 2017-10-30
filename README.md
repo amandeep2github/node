@@ -5,7 +5,7 @@ npm init
 
 mongoose.connect("mongodb://localhost/mydb");
 
-var myscehm = new mongoose.Schema({});
+var myscehm = new mongoose.Schema({title: String, created: {type: Date, default: Date.now}});
 
 
 var Cat = mongoose.model("Cat", myschem);
@@ -27,3 +27,5 @@ get /dogs/:id
 Cat.findById(req.params.id, function(err, cat){}
 
 bootstrap class form-group, form-control
+
+semantic-ui
