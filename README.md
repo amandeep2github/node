@@ -42,3 +42,5 @@ app.use(methodOverride("_method")
 
 grails like finders findByIdAndUpdated
 
+findByIdAndRemove
+
