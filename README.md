@@ -36,3 +36,9 @@ this way u can call mongoose api as
 Blog.create(req.body.blog, function(err, blog)
 
 <%- evaluate script %>
+
+method-override modules
+app.use(methodOverride("_method")
+
+grails like finders findByIdAndUpdated
+
