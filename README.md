@@ -34,3 +34,5 @@ name="blog[name]"
 name ="blog[title]"
 this way u can call mongoose api as 
 Blog.create(req.body.blog, function(err, blog)
+
+<%- evaluate script %>
