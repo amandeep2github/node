@@ -44,3 +44,10 @@ grails like finders findByIdAndUpdated
 
 findByIdAndRemove
 
+in mongo embedded association u can give ids for associated objects
+
+blogs{
+posts: [id1, id2]
+}
+
+modules.export("name", name)
