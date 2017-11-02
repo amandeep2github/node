@@ -51,3 +51,5 @@ posts: [id1, id2]
 }
 
 modules.export("name", name)
+
+__dirname
