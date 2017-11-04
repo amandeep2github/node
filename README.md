@@ -66,3 +66,5 @@ passport-local
 passport-local-mongoose
 express-session
 app.use(
+
+connect-flash
