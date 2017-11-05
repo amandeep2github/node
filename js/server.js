@@ -59,3 +59,7 @@ app.get("/get-sample-json", function(req, res){
 app.get("/params-query-example/:param", function(req, res){
 	res.send('You entered param - '+req.params.param+' and query - '+req.query.query);
 });
+
+app.get('/include-partials', function(req, res){
+	res.render('');
+});
