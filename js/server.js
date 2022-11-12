@@ -9,7 +9,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 
 // parse application/json
-app.use(bodyParser.json())
+//app.use(bodyParser.json())
 
 app.listen(8090, function(){
 	console.log('node server started using express!');
@@ -48,6 +48,16 @@ app.get("/sample-json", function(req, res){
 	res.send('{"name":"amandeep", "age":38}');
 
 });
+
+app.get("/delay", function(req, res){
+	var start = Date.now();
+	setTimeout(()=> {
+		res.send('sending reply after '+((Date.now() - start)/1000));
+	}, 2000);
+	
+
+});
+
 app.get("/get-sample-json", function(req, res){
 	request("http://localhost:8090/sample-json", function(error, response, body){
 		var jsonObj = JSON.parse(body);
